@@ -210,13 +210,13 @@
 
                             OUTPUT SUMMARY
 
-     QBP  MAX OUTFLOW(CFS) THRU BREACH                                  -184066.
+     QBP  MAX OUTFLOW(CFS) THRU BREACH                                **********
      TP   TIME(HR) AT WHICH PEAK OUTFLOW OCCURS                             0.00
      QP   MAX TOTAL OUTFLOW(CFS) OCCURRING AT TIME TP                         0.
      TRS  DURATION(HR) OF RISING LIMB OF HYDROGRAPH                         0.00
      TB   TIME(HR) AT WHICH SIGN. RISE IN OUTFLOW STARTS                    0.00
      BRD  FINAL DEPTH(FT) OF BREACH                                        90.00
-     BRW  TOP WIDTH(FT) OF BREACH AT PEAK BREACH FLOW                    -114.01
+     BRW  TOP WIDTH(FT) OF BREACH AT PEAK BREACH FLOW                       0.00
      HU   ELEV(FT) OF TOP OF DAM                                           90.00
      HY   FINAL ELEV(FT) OF RESERVOIR WATER SURFACE                       264.37
      HC   FINAL ELEV(FT) OF BOTTOM OF BREACH                               0.000
@@ -224,10 +224,10 @@
      QO   OUTFLOW (CFS) AT T=0.0                                         -0.0061
      Z    SIDE SLOPE OF BREACH (FT/FT) AT PEAK BREACH FLOW                  0.00
      TFH  TIME OF FAILURE (HR) WHICH IS LINEAR EQUIVALENT OF TRS
-          OBTAINED BY USING SIMPLIFIED DAM-BREAK DISCHARGE EQUATION        -0.05
+          OBTAINED BY USING SIMPLIFIED DAM-BREAK DISCHARGE EQUATION         0.00
      TFHI TIME OF FAILURE (HR) WHICH IS LINEAR EQUIVALENT OF TRS
           OBTAINED BY INTEGRATING QB VS TIME FROM T=0 TO T=TP               0.00
-     BO   BOTTOM WIDTH (FT) OF BREACH AT PEAK BREACH FLOW                -114.01
+     BO   BOTTOM WIDTH (FT) OF BREACH AT PEAK BREACH FLOW                   0.00
 
 
 1

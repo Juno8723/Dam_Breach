@@ -1,0 +1,366 @@
+{
+  "reference": [
+    {
+      "run": 1,
+      "exit_code": 0,
+      "qbp_raw": "**********",
+      "brw_raw": "0.00",
+      "stdout_sha256": "e6913709bb2e1638",
+      "stdout_len": 26118,
+      "has_overflow": true
+    },
+    {
+      "run": 2,
+      "exit_code": 0,
+      "qbp_raw": "0.",
+      "brw_raw": "0.00",
+      "stdout_sha256": "d2326b5971417eae",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 3,
+      "exit_code": 0,
+      "qbp_raw": "-184066.",
+      "brw_raw": "-114.01",
+      "stdout_sha256": "2586d2b8e248680f",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 4,
+      "exit_code": 0,
+      "qbp_raw": "-184066.",
+      "brw_raw": "-114.01",
+      "stdout_sha256": "2586d2b8e248680f",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 5,
+      "exit_code": 0,
+      "qbp_raw": "-0.",
+      "brw_raw": "0.00",
+      "stdout_sha256": "832d093bb1faa6a3",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 6,
+      "exit_code": 0,
+      "qbp_raw": "-0.",
+      "brw_raw": "0.00",
+      "stdout_sha256": "832d093bb1faa6a3",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 7,
+      "exit_code": 0,
+      "qbp_raw": "-184066.",
+      "brw_raw": "-114.01",
+      "stdout_sha256": "2586d2b8e248680f",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 8,
+      "exit_code": 0,
+      "qbp_raw": "0.",
+      "brw_raw": "0.00",
+      "stdout_sha256": "d2326b5971417eae",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 9,
+      "exit_code": 0,
+      "qbp_raw": "-184066.",
+      "brw_raw": "-114.01",
+      "stdout_sha256": "2586d2b8e248680f",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 10,
+      "exit_code": 0,
+      "qbp_raw": "**********",
+      "brw_raw": "0.00",
+      "stdout_sha256": "e6913709bb2e1638",
+      "stdout_len": 26118,
+      "has_overflow": true
+    },
+    {
+      "run": 11,
+      "exit_code": 0,
+      "qbp_raw": "-0.",
+      "brw_raw": "0.00",
+      "stdout_sha256": "832d093bb1faa6a3",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 12,
+      "exit_code": 0,
+      "qbp_raw": "0.",
+      "brw_raw": "0.00",
+      "stdout_sha256": "d2326b5971417eae",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 13,
+      "exit_code": 0,
+      "qbp_raw": "-184066.",
+      "brw_raw": "-114.01",
+      "stdout_sha256": "2586d2b8e248680f",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 14,
+      "exit_code": 0,
+      "qbp_raw": "-0.",
+      "brw_raw": "0.00",
+      "stdout_sha256": "832d093bb1faa6a3",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 15,
+      "exit_code": 0,
+      "qbp_raw": "-1471.",
+      "brw_raw": "0.00",
+      "stdout_sha256": "744d8250039394b9",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 16,
+      "exit_code": 0,
+      "qbp_raw": "0.",
+      "brw_raw": "0.00",
+      "stdout_sha256": "d2326b5971417eae",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 17,
+      "exit_code": 0,
+      "qbp_raw": "**********",
+      "brw_raw": "0.00",
+      "stdout_sha256": "e6913709bb2e1638",
+      "stdout_len": 26118,
+      "has_overflow": true
+    },
+    {
+      "run": 18,
+      "exit_code": 0,
+      "qbp_raw": "0.",
+      "brw_raw": "0.00",
+      "stdout_sha256": "d2326b5971417eae",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 19,
+      "exit_code": 0,
+      "qbp_raw": "-184066.",
+      "brw_raw": "-114.01",
+      "stdout_sha256": "2586d2b8e248680f",
+      "stdout_len": 26118,
+      "has_overflow": false
+    },
+    {
+      "run": 20,
+      "exit_code": 0,
+      "qbp_raw": "-184066.",
+      "brw_raw": "-114.01",
+      "stdout_sha256": "2586d2b8e248680f",
+      "stdout_len": 26118,
+      "has_overflow": false
+    }
+  ],
+  "corrected": [
+    {
+      "run": 1,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 2,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 3,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 4,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 5,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 6,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 7,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 8,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 9,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 10,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 11,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 12,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 13,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 14,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 15,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 16,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 17,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 18,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 19,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    },
+    {
+      "run": 20,
+      "exit_code": 0,
+      "qbp_raw": "137255.",
+      "brw_raw": "57.62",
+      "stdout_sha256": "94f6fbba3627e07e",
+      "stdout_len": 74695,
+      "has_overflow": false
+    }
+  ]
+}
