@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "summary": {
+    "QBP": 487758.0,
+    "TP": 5.92,
+    "QP": 487758.0,
+    "TRS": 5.92,
+    "TB": 0.0,
+    "BRD": 342.68,
+    "BRW": 414.62,
+    "HU": 560.0,
+    "HY_final": 231.38,
+    "HC_final": 217.323,
+    "AGL": 45.5,
+    "QO": 0.0191,
+    "Z": 1.02,
+    "TFH": 5.35,
+    "TFHI": 4.03,
+    "BO_final": 3.53
+  },
+  "hydrograph": [],
+  "kreg_transitions": [],
+  "runtime_warnings": []
+}
