@@ -9,19 +9,19 @@
       0.00     16.00     20.00     21.00     22.00     24.00     40.00    100.00
 
           (RSA(I),I=1,8)
-  13838.00  11737.00   4695.00   2718.00    988.00    494.00      0.00      0.00
+      13838.00      11737.00       4695.00       2718.00        988.00        494.00          0.00          0.00
 
           (HSA(I),I=1,8)
-    236.20    221.50    164.00    131.20     98.40     65.60      9.84      0.00
+        236.20        221.50        164.00        131.20         98.40         65.60          9.84          0.00
 
           (HSTW(I),I=1,8)
-      9.84     13.12     16.41     32.81     98.40    164.10      0.00      0.00
+          9.84         13.12         16.41         32.81         98.40        164.10          0.00          0.00
 
           (BSTW(I),I=1,8)
-    114.84    114.84    114.84    361.00    574.20    787.40      0.00      0.00
+        114.84        114.84        114.84        361.00        574.20        787.40          0.00          0.00
 
           (CMTW(I),I=1,8)
-      0.04      0.04      0.04      0.04      0.04      0.04      0.00      0.00
+          0.04          0.04          0.04          0.04          0.04          0.04          0.00          0.00
 
   ZU=  2.00  ZD=  2.00  ZC=  0.25  GL=  0.00  GS=  0.00  VMP=  0.00  SEDCON=  0.00
 
@@ -43,7 +43,7 @@
 
 
 
-          AFRA=   0.0   TH1= 65.00   H1=  0.09   TH2= 50.00   H2= 20.25   TH3= 40.00   H3= 73.34   SEDCON=  0.50
+          AFRA=  35.0   TH1= 65.00   H1=  0.09   TH2= 50.00   H2= 20.25   TH3= 40.00   H3= 73.34   SEDCON=  0.50
 
 
 1
@@ -266,7 +266,7 @@
      HC   FINAL ELEV(FT) OF BOTTOM OF BREACH                             221.500
      AGL  ACUTE ANGLE THAT BREACH SIDE MAKES WITH VERTICAL AT QBP          0.000
      QO   OUTFLOW (CFS) AT T=0.0                                          0.0000
-     Z    SIDE SLOPE OF BREACH (FT/FT) AT PEAK BREACH FLOW                 -0.00
+     Z    SIDE SLOPE OF BREACH (FT/FT) AT PEAK BREACH FLOW                  0.00
      TFH  TIME OF FAILURE (HR) WHICH IS LINEAR EQUIVALENT OF TRS
           OBTAINED BY USING SIMPLIFIED DAM-BREAK DISCHARGE EQUATION         0.00
      TFHI TIME OF FAILURE (HR) WHICH IS LINEAR EQUIVALENT OF TRS

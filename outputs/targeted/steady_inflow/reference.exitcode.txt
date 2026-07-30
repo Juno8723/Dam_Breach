@@ -1,2 +1,1 @@
-reference exitcode
-139 (segfault)
+139
