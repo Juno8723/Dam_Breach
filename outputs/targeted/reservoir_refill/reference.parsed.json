@@ -1,0 +1,39 @@
+{
+  "completed": true,
+  "summary": {
+    "QBP": 310552.0,
+    "TP": 17.56,
+    "QP": 310932.0,
+    "TRS": 12.76,
+    "TB": 4.8,
+    "BRD": 90.0,
+    "BRW": 205.44,
+    "HU": 90.0,
+    "HY_final": 50.31,
+    "HC_final": 0.0,
+    "AGL": 35.0,
+    "QO": 0.0,
+    "Z": 0.7,
+    "TFH": 0.21,
+    "TFHI": 17.36,
+    "BO_final": 79.41
+  },
+  "kreg_transitions": [
+    {
+      "T": 0.005,
+      "I": 1,
+      "KREG": 1
+    },
+    {
+      "T": 5.286,
+      "I": 50,
+      "KREG": 2
+    },
+    {
+      "T": 5.519,
+      "I": 187,
+      "KREG": 3
+    }
+  ],
+  "runtime_warnings": []
+}
