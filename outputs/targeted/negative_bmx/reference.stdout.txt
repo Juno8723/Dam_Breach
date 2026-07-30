@@ -210,7 +210,7 @@
 
                             OUTPUT SUMMARY
 
-     QBP  MAX OUTFLOW(CFS) THRU BREACH                                **********
+     QBP  MAX OUTFLOW(CFS) THRU BREACH                                   638598.
      TP   TIME(HR) AT WHICH PEAK OUTFLOW OCCURS                             0.00
      QP   MAX TOTAL OUTFLOW(CFS) OCCURRING AT TIME TP                         0.
      TRS  DURATION(HR) OF RISING LIMB OF HYDROGRAPH                         0.00
