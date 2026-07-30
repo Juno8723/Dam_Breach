@@ -4,7 +4,25 @@
 
 `Breach.for` declares no explicit `REAL*8`/`DOUBLE PRECISION` anywhere and is compiled without `-fdefault-real-8`, so every floating-point value in the model (including `HY`, `QB`, `DTH`, ...) is standard 32-bit single-precision `REAL`. Compiler optimization is fixed at `-O0` for both binaries (no reordering-related divergence expected between reference and corrected builds beyond the intended logic changes).
 
-The model has its own internal convergence tolerance: the DTH/DHH erosion-rate convergence check is `IF(ABS(DH-DHH)/DHH*100.LT.ERR) GO TO 96`, where `ERR` defaults to 0.5 (i.e. 0.5%) when unset (`original/SRC/Breach.for:1644`, `IF(ERR.LE.0.001) ERR=0.5`) and is 0.01–0.02 in the five example inputs (tighter than default). Given single precision's ~7 significant digits and this convergence-loop tolerance, `tests/compare_outputs.py` uses a **0.5% relative tolerance** by default — loose enough to not flag single-precision noise or convergence-loop jitter, tight enough to catch the genuine multi-percent shifts documented below. This was chosen, not measured against a reference double-precision run (no such run exists to compare against), so treat it as a reasonable default rather than a rigorously derived bound; the flag is user-adjustable (`--tol`).
+The model has its own internal convergence tolerance: the DTH/DHH erosion-rate convergence check is `IF(ABS(DH-DHH)/DHH*100.LT.ERR) GO TO 96`, where `ERR` defaults to 0.5 (i.e. 0.5%) when unset (`original/SRC/Breach.for:1644`, `IF(ERR.LE.0.001) ERR=0.5`) and is 0.01–0.02 in the five example inputs (tighter than default). Given single precision's ~7 significant digits and this convergence-loop tolerance, a flat 0.5% relative tolerance was used through most of this project's development (`tests/compare_outputs.py --tol 0.5`, still available as a "legacy flat mode").
+
+### Variable-specific tolerances (current default, `tests/compare_outputs.py` with no `--tol`)
+
+A single flat relative percentage turned out to be a poor fit for every output type — it's too loose for large steady quantities and, more importantly, **too strict for small time durations**: `TRS` (rising-limb duration) shifting from 0.16 to 0.14 hr is a 12.5% *relative* change but only a 0.02 hr (~70 second) *absolute* one, well within what a finite `DTH` can resolve. `compare_outputs.py` now classifies each summary field into one of four categories, each with its own default bound (all overridable by reading the source — see its module docstring for the exact numbers and reasoning):
+
+| Category | Fields | Bound | Why |
+|---|---|---|---|
+| `continuous` | `QBP`, `QP`, `BRD`, `BRW`, `BO_final` | absolute floor (flow: 1 cfs, width/depth: 0.1 ft) **or** 0.5% relative, whichever passes | Matches the model's own `ERR` convergence tolerance; the absolute floor avoids flagging noise on small values a pure percent check would over-penalize |
+| `elevation` | `HY_final`, `HC_final`, `HU` | 0.1 ft absolute, **or** 1% relative backstop for large swings | These are differences of large numbers (hundreds of ft) — percent alone is a poor signal; BSMBOT2's genuine 8.25 ft shift is far above this floor and correctly flags |
+| `time` | `TP`, `TB`, `TRS`, `TFH`, `TFHI` | 0.05 hr (~3 min) absolute only | Matches the resolution a `DTH`-scale simulation can meaningfully claim (`docs/TIMESTEP_CONVERGENCE.md` confirms results are DTH-floor-converged well below this); relative percent is meaningless for durations that can legitimately be small |
+| `near_zero` | `AGL`, `QO`, `Z` | 0.05 absolute only | Can legitimately be ≈0, where relative error is undefined |
+| `state` | `KREG` transition sequence | **exact match, no tolerance** | A state-machine sequence has no notion of "close enough" |
+
+Neither category was measured against a reference double-precision run (none exists to compare against) — both the flat and categorized defaults are reasoned defaults, not empirically-derived bounds, and both are documented as such rather than presented as more rigorous than they are.
+
+### Recommended tolerance for a future Python port
+
+If a Python port uses the same single-precision arithmetic as this Fortran build, the tolerances above remain appropriate. If it uses Python's native double precision (the more likely and generally preferable choice), the `continuous`/`elevation` categories should be **tightened substantially** (e.g. toward 1e-6 relative or an absolute floor near machine epsilon for the quantity's scale) since a faithful, higher-precision port shouldn't need to absorb single-precision-only noise — a port that only passes at the current loose tolerances would itself be a signal something is wrong. `time`/`state` categories should stay close to their current bounds regardless of precision, since they reflect the model's `DTH` step resolution and discrete state machine, not floating-point precision.
 
 ## 2. Regression results: 5 provided examples, reference vs. fully-corrected build
 
@@ -12,11 +30,11 @@ Command: `python3 tests/compare_outputs.py outputs/baseline outputs/corrected`
 
 | Case | Result |
 |---|---|
-| CLAY | No change (within 0.5%) |
-| LAWN | No change (within 0.5%) |
-| PERU | No change (within 0.5%) |
-| TETON | No change (within 0.5%) |
-| BSMBOT2 | **Changed** — see below |
+| CLAY | No change (within variable-specific tolerances) |
+| LAWN | No change (within variable-specific tolerances) |
+| PERU | No change (within variable-specific tolerances) |
+| TETON | No change (within variable-specific tolerances) |
+| BSMBOT2 | **Changed** — see below (`BO_final`, `HY_final`, `TP`, `TB`, `TFH` all exceed their category bounds; `QBP`/`QP`/`TRS`/`TFHI` pass under the new categorized tolerances despite exceeding the old flat 0.5%) |
 
 ### Why BSMBOT2 changes (and the others don't)
 
