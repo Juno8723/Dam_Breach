@@ -1,0 +1,4 @@
+T_hr,prev_KG,new_KG,prev_KREG,new_KREG,HY_ft,TWD_ft,HC_ft,BT_ft,depth_ft,QB_cfs,QTS_cfs,DTH_hr,reason
+    0.0050,-99,  1,-99,  1,     90.00,      0.00,     90.00,      0.12,      0.00,          0.00,          0.03, 0.00550,OVERTOPPING_INITIATION        
+    2.6197,  1,  2,  1,  2,     90.41,      2.25,     90.00,     16.87,      0.00,         13.11,        401.42, 0.00050,EROSION_REGION_CHANGE         
+   10.2288,  2,  2,  2,  2,      2.89,      2.25,      0.23,    183.26,     89.77,        500.55,          0.00, 0.53250,        SIMULATION_TERMINATION
